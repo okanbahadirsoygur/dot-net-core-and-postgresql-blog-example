@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "13c1wQ9Hh1FPAacJJCbpJhG7SbjpuKGJjo9NDMNREeFdCQE+RNiSYae6eMjIPGVvkaADqD3BjLajQB1gOgpWyg==",
+  "dgSpecHash": "1RE6WT3oAFF6fB4hks65u4XL63pv/SlahOnqA/ltvc74Kaki6aGVQY2kl0I+ebQJrigOH/CxwEWPGgDUDiBAHA==",
   "success": true,
-  "projectFilePath": "/Users/bahadir/Projects/deniz/deniz/deniz.csproj",
+  "projectFilePath": "/Users/bahadir/Projects/dot-net-core-and-postgresql-blog-example/deniz/deniz.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    burası login sayfası
+
+    @if (ViewBag.kadi != null)
+        @ViewBag.kadi
+
+
+    @if (ViewBag.sifre != null)
+        @ViewBag.sifre
+
+    <form action="/login" method="POST">
+
+        <input type="text" placeholder="Kullanıcı Adını Gir" name="kadi" />
+        <input type="password" placeholder="Şifreni Gir" name="sifre" />
+        <input type="submit" value="Giriş Yap" />
+
+    </form>
+</body>
+</html>

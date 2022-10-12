@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bahadir/Projects/deniz/deniz/deniz.csproj",
+      "projectUniqueName": "/Users/bahadir/Projects/dot-net-core-and-postgresql-blog-example/deniz/deniz.csproj",
       "projectName": "deniz",
-      "projectPath": "/Users/bahadir/Projects/deniz/deniz/deniz.csproj",
+      "projectPath": "/Users/bahadir/Projects/dot-net-core-and-postgresql-blog-example/deniz/deniz.csproj",
       "packagesPath": "/Users/bahadir/.nuget/packages/",
-      "outputPath": "/Users/bahadir/Projects/deniz/deniz/obj/",
+      "outputPath": "/Users/bahadir/Projects/dot-net-core-and-postgresql-blog-example/deniz/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/bahadir/.nuget/NuGet/NuGet.Config"

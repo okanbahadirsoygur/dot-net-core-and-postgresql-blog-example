@@ -6,16 +6,38 @@ namespace deniz.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+ 
 
     public IActionResult Index()
     {
+
+
         return View();
+    }
+
+    [HttpGet]
+    [Route("/login")]
+    public IActionResult login()
+    {
+
+        String kadi = HttpContext.Request.Query["kadi"].ToString();
+        String sifre = HttpContext.Request.Query["sifre"].ToString();
+
+        ViewBag.kadi = kadi;
+        ViewBag.sifre = sifre;
+        return View();
+
+    }//func
+
+    [HttpPost]
+    [Route("/login")]
+    public IActionResult loginPost()
+    {
+        String ad = HttpContext.Request.Form["kadi"];
+        String sifre = HttpContext.Request.Form["sifre"];
+
+
+        return Redirect("/login?kadi="+ad+"&sifre="+sifre);
     }
 
     public IActionResult Privacy()
@@ -23,10 +45,14 @@ public class HomeController : Controller
         return View();
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    
+    [HttpGet]
+    [Route("/register")]
+    public IActionResult Register()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View();
     }
+
+  
 }
 
